@@ -5,4 +5,4 @@ We aim to produce a solution for easy crop prediction taking into consideration 
 -- This system is, in form of a website, which uses Machine Learning techniques in order to predict the most producible crop in the current weather and soil conditions. 
 -- The proposed system will integrate the data obtained from soil, crop repository, weather conditions and by applying machine learning algorithm: Multiple Linear Regression, a prediction of most suitable crops according to current environmental conditions is made.
 
-Project teammate - Mounvi Podapati
+Contributor - Mounvi Podapati

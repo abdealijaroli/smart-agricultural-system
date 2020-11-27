@@ -1,0 +1,187 @@
+body{
+  overflow-y:scroll;
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background:#e8ded2; 
+  border-radius: 12px;
+  padding:2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background:#e8fffe; 
+}
+.search_categories {
+  font-size: 13px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+  position: absolute;
+  margin-top: 20px;
+  left: 42%;
+  top: 12%;
+  right: 40%;
+  width: 160px;
+  height: 22px;
+  -moz-border-radius: 9px 9px 9px 9px;
+  -webkit-border-radius: 9px 9px 9px 9px;
+  border-radius: 9px 9px 9px 9px;
+  box-shadow: 1px 1px 11px rgb(70, 70, 70);
+  background: #5eaaa8;
+  outline: none;
+  z-index:100;
+}
+
+select:focus {
+  outline: none;
+}
+select {
+  outline: none;
+}
+.search_categories .select select {
+  background: #5eaaa8;
+  /* line-height: 2; */
+  padding: 0;
+  left: 7%;
+  border: 1px;
+  border-radius: 6px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  z-index: 10;
+  font-size: 1em;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 2px 10px;
+  -webkit-appearance: none;
+  overflow: hidden;
+}
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+
+.btn {
+  transition: all .5s ease-in-out;
+  color: black;
+  margin-top: 10px;
+  width: 170px;
+  height: 35px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  background:#5eaaa8;
+  border-radius: 7px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+
+.btn:hover {
+  transition: all .5s ease-in-out;
+  color: white;
+  background-color: #056676;
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline: none;
+}
+.btn:active{
+  transform:translateY(3px);
+}
+
+.load {
+  transition: all .5s ease-in-out;
+  color: white;
+  background-color: black;
+  min-width: 4%;
+  padding: 8px 0px;
+}
+
+.loaded {
+  -webkit-animation: roll 1s 2;
+}
+
+.green {
+  background-color: #5eaaa8;
+  color: white;
+  border: none;
+  min-width: 6%;
+  height: 10%;
+  padding: 8px 0px;
+}
+
+@-webkit-keyframes roll {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#crops {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 60%;
+  left: 20%;
+  top: 22%;
+  border-radius: 15px;
+  padding:8px;
+  z-index:150;
+  box-shadow: 0 15px 30px 10px rgba(0,0,0,0.3);
+  position: absolute;
+  visibility: hidden;
+  text-align: center;
+  height: auto;
+  display: block;
+}
+
+#crops td,
+#crops th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  max-width: 28px;
+  background-color:-webkit-linear-gradient(55deg, #a3d2ca 50%,#e8ded2 50%);
+  font-size: 20px;
+  border-radius:3px;
+  color:white;
+}
+td{
+  vertical-align:middle;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+}
+td:hover{
+  transform:scale(1.1);
+}
+img{
+  border-radius:5px;
+}
+img:hover{
+  transform: scale(1.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#crops th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #5eaaa8;
+  color: white;
+}
+@media screen and (max-width:600px){
+  .search_categories {
+    left:32%;}
+    .btn{
+      margin-top:110px;
+    }
+    #crops{
+      width: 95%;
+      left:3.5%;
+    }
+}

@@ -1,0 +1,22 @@
+#downloadtext{
+    position: absolute;
+    left: 35%;
+    top: 5vh;
+    font-size: 2rem;
+    font-family: cursive;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+@media screen and (max-width:600px){
+    #downloadtext{
+        font-size:1.5rem;
+        top:50px;
+        left:19%;
+    }
+    #map{
+        height:20px;
+        top:100px;
+        margin:3px;
+        margin-left:10px;
+    }
+}
